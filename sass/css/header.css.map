@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "AAAA,AAAA,aAAa,CAAA;EACT,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,MAAM,EAAE,IAAI;CACf",
     "sources": [
-        "header.scss"
+        "../layout/header.scss"
     ],
     "names": [],
     "file": "header.css"

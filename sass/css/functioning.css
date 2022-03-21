@@ -1,0 +1,29 @@
+.functioning {
+  margin-top: 20px;
+  position: relative;
+}
+
+.functioning__list {
+  position: relative;
+}
+
+.functioning__card {
+  padding: 20px;
+  border-radius: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F6F6F6;
+  margin-top: 20px;
+}
+
+.functioning__card:hover {
+  background-color: #9356DC;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.functioning__card i {
+  padding: 10px;
+}
+/*# sourceMappingURL=functioning.css.map */

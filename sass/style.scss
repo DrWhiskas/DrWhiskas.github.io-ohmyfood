@@ -7,11 +7,12 @@
 @import "./layout/button.scss";
 @import "./layout/restaurants.scss";
 @import "./layout/functioning.scss";
-@import "./page/restaurant.scss";
+@import "./page/menu.scss";
 
 .title_font {
     font-family: 'Shrikhand', cursive;
     font-style: italic;
+    color: red;
     &--white{
         color: white;
     }    
