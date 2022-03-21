@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/**************** VARIABLES ****************/
+$purple:#9356DC;
+$rose:#FF79DA ;
+$light-blue:#99E2D0;
+
+
+
+body{
+    font-family: 'Shrikhand', cursive;
+}
+
+@mixin title-font {
+    font-family: 'Roboto', sans-serif;    
+}
+
+/**************** HEADER ****************/
+#header__logo{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
