@@ -10,6 +10,15 @@ a {
   color: inherit;
 }
 
+.title_font {
+  font-family: 'Shrikhand', cursive;
+  font-style: italic;
+}
+
+.title_font--white {
+  color: white;
+}
+
 /**************** HEADER ****************/
 #header__logo {
   display: -webkit-box;
@@ -99,7 +108,7 @@ a {
 
 /**************** RESTAURANTS ****************/
 .restaurants {
-  background-color: #F6F6F6;
+  background-color: #F2F2F2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,6 +119,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .restaurants__title {
@@ -123,6 +134,9 @@ a {
   border-radius: 20px;
   background: white;
   position: relative;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-top: 20px;
 }
 
 .restaurants__card img {
@@ -135,7 +149,7 @@ a {
 .restaurants__card__hero {
   position: absolute;
   top: 8%;
-  left: 67%;
+  left: 70%;
   padding: 9px 17px;
   border-radius: 6px;
   background: #99E2D0;
@@ -155,5 +169,27 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+/**************** FOOTER ****************/
+.content {
+  background-color: #353535;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content__list {
+  list-style: none;
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */
