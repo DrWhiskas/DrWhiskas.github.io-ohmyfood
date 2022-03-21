@@ -65,8 +65,8 @@ a{
         padding: 15px 32px;
         border-radius: 30px;
         border: none;
-        background-color: $secondary;
         color: white;
+        background: linear-gradient(to bottom right,$secondary,$primary);
         cursor:pointer;
     }
 
