@@ -1,0 +1,21 @@
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+@import "./base/base.scss";
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+@import "./layout/reservation.scss";
+@import "./layout/button.scss";
+@import "./layout/restaurants.scss";
+@import "./layout/functioning.scss";
+@import "./page/restaurant.scss";
+
+.title_font {
+    font-family: 'Shrikhand', cursive;
+    font-style: italic;
+    &--white{
+        color: white;
+    }    
+}
+
+
+

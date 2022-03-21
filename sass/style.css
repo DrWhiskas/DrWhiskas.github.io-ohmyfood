@@ -1,32 +1,42 @@
-/**************** VARIABLES ****************/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  font-family: 'Roboto', sans-serif;
+}
 
 a {
   text-decoration: none;
   color: inherit;
 }
 
-.title_font {
-  font-family: 'Shrikhand', cursive;
-  font-style: italic;
-}
-
-.title_font--white {
-  color: white;
-}
-
-/**************** HEADER ****************/
 #header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: auto;
 }
 
-/**************** MAIN ************************/
-/**************** RESERVATION ****************/
+.content {
+  background-color: #353535;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content__list {
+  list-style: none;
+  padding: 0;
+}
+
 .reservation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,7 +72,7 @@ a {
   width: 90%;
 }
 
-.reservation__btn {
+.btn__style {
   padding: 15px 32px;
   border-radius: 30px;
   border: none;
@@ -74,37 +84,6 @@ a {
   cursor: pointer;
 }
 
-/**************** FUNCTIONING ****************/
-.functioning {
-  margin-top: 20px;
-  position: relative;
-}
-
-.functioning__list {
-  position: relative;
-}
-
-.functioning__card {
-  padding: 20px;
-  border-radius: 15px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #F6F6F6;
-  margin-top: 20px;
-}
-
-.functioning__card:hover {
-  background-color: #9356DC;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-}
-
-.functioning__card i {
-  padding: 10px;
-}
-
-/**************** RESTAURANTS ****************/
 .restaurants {
   background-color: #F2F2F2;
   display: -webkit-box;
@@ -169,25 +148,41 @@ a {
           flex: 1;
 }
 
-/**************** FOOTER ****************/
-.content {
-  background-color: #353535;
-  color: white;
-  padding: 10px;
+.functioning {
   margin-top: 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  position: relative;
 }
 
-.content__list {
-  list-style: none;
-  padding: 0;
+.functioning__list {
+  position: relative;
+}
+
+.functioning__card {
+  padding: 20px;
+  border-radius: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F6F6F6;
+  margin-top: 20px;
+}
+
+.functioning__card:hover {
+  background-color: #9356DC;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.functioning__card i {
+  padding: 10px;
+}
+
+.title_font {
+  font-family: 'Shrikhand', cursive;
+  font-style: italic;
+}
+
+.title_font--white {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
