@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /**************** VARIABLES ****************/
 body {
-  font-family: 'Shrikhand', cursive;
+  font-family: 'Roboto', sans-serif;
 }
 
 /**************** HEADER ****************/
@@ -14,5 +14,50 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
+}
+
+/**************** MAIN ************************/
+/**************** RESERVATION ****************/
+.reservation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  background-color: #F6F6F6;
+  padding-bottom: 23px;
+}
+
+.reservation__header {
+  background-color: #EAEAEA;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.reservation__title {
+  text-align: center;
+  width: 71%;
+}
+
+.reservation__text {
+  text-align: center;
+  width: 90%;
+}
+
+.reservation__btn {
+  padding: 15px 32px;
+  border-radius: 30px;
+  border: none;
+  background-color: #FF79DA;
+  color: white;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

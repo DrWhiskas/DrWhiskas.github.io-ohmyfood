@@ -2,18 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /**************** VARIABLES ****************/
-$purple:#9356DC;
-$rose:#FF79DA ;
-$light-blue:#99E2D0;
+$primary:#9356DC;
+$secondary:#FF79DA ;
+$tertiary:#99E2D0;
 
 
 
 body{
-    font-family: 'Shrikhand', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
 @mixin title-font {
-    font-family: 'Roboto', sans-serif;    
+    font-family: 'Shrikhand', cursive;
+    
 }
 
 /**************** HEADER ****************/
@@ -21,4 +22,39 @@ body{
     display: flex;
     justify-content: center;
     margin: auto;
+}
+/**************** MAIN ************************/
+
+/**************** RESERVATION ****************/
+.reservation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #F6F6F6;
+    padding-bottom: 23px;
+    &__header{
+        background-color: #EAEAEA;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+    }
+    &__title{
+        text-align: center;
+        width: 71%;
+    }
+    &__text{
+        text-align: center;
+        width: 90%;
+    }
+    &__btn{
+        padding: 15px 32px;
+        border-radius: 30px;
+        border: none;
+        background-color: $secondary;
+        color: white;
+        cursor:pointer;
+    }
+
 }
