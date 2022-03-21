@@ -1,0 +1,21 @@
+.functioning{
+    @include top-space;
+    position: relative;
+    &__list{
+        position: relative;
+    }
+    &__card{
+        padding: 20px;
+        border-radius: 15px;
+        align-items: center;
+        background-color: $bgcard;
+        @include top-space;
+    }
+    &__card:hover{
+        background-color: $primary;
+        transition: all .5s ease;
+    }
+    &__card i{
+        padding: 10px;
+    }
+}

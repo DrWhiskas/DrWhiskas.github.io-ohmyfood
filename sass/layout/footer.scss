@@ -1,0 +1,13 @@
+.content{
+    background-color: #353535;
+    color: white;
+    padding: 10px;
+    @include top-space;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    &__list{
+        list-style: none;
+        padding: 0;
+    }
+}
