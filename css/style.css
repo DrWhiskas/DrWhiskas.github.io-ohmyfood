@@ -30,6 +30,7 @@ body {
   margin-top: 20px;
   background-color: #F6F6F6;
   padding-bottom: 23px;
+  position: relative;
 }
 
 .reservation__header {
@@ -59,5 +60,29 @@ body {
   background-color: #FF79DA;
   color: white;
   cursor: pointer;
+}
+
+/**************** FUNCTIONING ****************/
+.functioning {
+  margin-top: 20px;
+  position: relative;
+}
+
+.functioning__list {
+  position: relative;
+}
+
+.functioning__card {
+  padding: 20px;
+  border-radius: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F6F6F6;
+  margin-top: 20px;
+}
+
+.functioning__card i {
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */
