@@ -1,1 +1,6 @@
-/* No CSS *//*# sourceMappingURL=menu.css.map */
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=menu.css.map */

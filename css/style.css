@@ -180,6 +180,19 @@ a {
   padding: 10px;
 }
 
+#header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#header__logo__icon {
+  position: absolute;
+}
+
 .title_font {
   font-family: 'Shrikhand', cursive;
   font-style: italic;
