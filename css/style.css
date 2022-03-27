@@ -180,17 +180,15 @@ a {
   padding: 10px;
 }
 
-#header__logo {
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-#header__logo__icon {
-  position: absolute;
+.main__header img {
+  max-width: 100%;
+  max-height: 500px;
 }
 
 .title_font {
