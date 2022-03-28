@@ -4,6 +4,7 @@
 .functioning{
     @include top-space;
     position: relative;
+    padding: 10px;
     &__list{
         position: relative;
     }

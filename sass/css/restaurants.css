@@ -20,7 +20,7 @@
 
 .restaurants__card {
   overflow: hidden;
-  height: auto;
+  height: 280px;
   width: 95%;
   border-radius: 20px;
   background: white;
@@ -53,12 +53,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 20px;
+  padding: 16px 20px;
 }
 
 .restaurants__card__info__text {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.restaurants__card__info__text h3, .restaurants__card__info__text p {
+  margin: 0;
 }
 /*# sourceMappingURL=restaurants.css.map */

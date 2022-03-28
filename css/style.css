@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -17,6 +19,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
+  padding: 10px;
 }
 
 .content {
@@ -109,7 +112,7 @@ a {
 
 .restaurants__card {
   overflow: hidden;
-  height: auto;
+  height: 280px;
   width: 95%;
   border-radius: 20px;
   background: white;
@@ -142,7 +145,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 20px;
+  padding: 16px 20px;
 }
 
 .restaurants__card__info__text {
@@ -151,9 +154,14 @@ a {
           flex: 1;
 }
 
+.restaurants__card__info__text h3, .restaurants__card__info__text p {
+  margin: 0;
+}
+
 .functioning {
   margin-top: 20px;
   position: relative;
+  padding: 10px;
 }
 
 .functioning__list {
@@ -265,5 +273,16 @@ a {
       -ms-flex-align: end;
           align-items: flex-end;
   font-weight: bold;
+}
+
+/*** CTA ***/
+.cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */

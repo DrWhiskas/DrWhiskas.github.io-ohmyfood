@@ -1,6 +1,7 @@
 .functioning {
   margin-top: 20px;
   position: relative;
+  padding: 10px;
 }
 
 .functioning__list {
