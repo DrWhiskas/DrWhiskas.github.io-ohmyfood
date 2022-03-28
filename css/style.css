@@ -180,17 +180,6 @@ a {
   padding: 10px;
 }
 
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.main__header img {
-  max-width: 100%;
-  max-height: 500px;
-}
-
 .title_font {
   font-family: 'Shrikhand', cursive;
   font-style: italic;
@@ -199,5 +188,82 @@ a {
 
 .title_font--white {
   color: white;
+}
+
+/**** HEADER *****/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/***** MAIN *****/
+.main__header {
+  margin-top: 20px;
+}
+
+.main__header img {
+  max-width: 100%;
+  max-height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu {
+  position: relative;
+  background-color: #F6F6F6;
+  margin-top: -73px;
+  border-radius: 25px 25px 0 0;
+  height: auto;
+}
+
+.menu__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+
+.menu__title {
+  background-color: red;
+}
+
+.menu__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+}
+
+.menu__card__info p {
+  margin: 0;
+}
+
+.menu__card__info h3 {
+  margin: 0;
+}
+
+.menu__card__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
