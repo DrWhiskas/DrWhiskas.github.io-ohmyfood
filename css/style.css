@@ -238,10 +238,6 @@ a {
   padding: 0 20px;
 }
 
-.menu__title {
-  background-color: red;
-}
-
 .menu__card {
   display: -webkit-box;
   display: -ms-flexbox;
