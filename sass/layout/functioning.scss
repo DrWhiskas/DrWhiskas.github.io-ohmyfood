@@ -5,6 +5,9 @@
     @include top-space;
     position: relative;
     padding: 10px;
+    & h2{
+        width: 100%;
+    }
     &__list{
         position: relative;
     }

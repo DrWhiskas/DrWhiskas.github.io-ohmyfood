@@ -174,6 +174,10 @@ a {
   padding: 10px;
 }
 
+.functioning h2 {
+  width: 100%;
+}
+
 .functioning__list {
   position: relative;
 }
@@ -199,9 +203,6 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-  body {
-    background-color: blue;
-  }
   .restaurants {
     background-color: #F2F2F2;
     display: -webkit-box;
@@ -221,9 +222,17 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .functioning__list {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .functioning__card {
     padding: 20px;
@@ -233,33 +242,12 @@ a {
             align-items: center;
     background-color: #F6F6F6;
     margin-top: 20px;
+    margin-right: 135px;
   }
 }
 
-.acceuil {
-  height: 100%;
-  width: 100%;
-  background-color: red;
-  background-size: cover;
-  background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.acceuil h1 {
-  font-size: 120px;
-  margin-bottom: 450px;
-}
-
 .loader {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   background: black;
@@ -272,6 +260,13 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1;
+  -webkit-animation: transparent;
+          animation: transparent;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .letter {
@@ -356,6 +351,28 @@ a {
   opacity: 0;
   -webkit-transition: opacity 0.4s ease-out;
   transition: opacity 0.4s ease-out;
+}
+
+@-webkit-keyframes transparent {
+  from {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  to {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+@keyframes transparent {
+  from {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  to {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
 }
 
 .title_font {

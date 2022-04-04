@@ -1,6 +1,5 @@
 @media screen and (min-width: 1024px){
     body{
-        background-color: blue;
     }
     .restaurants {
         background-color: #F2F2F2;
@@ -14,17 +13,20 @@
     .functioning {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     
         &__list {
             position: relative;
+            display: flex;
+            flex-wrap: wrap;
         }
-    
         &__card {
             padding: 20px;
             border-radius: 15px;
             align-items: center;
             background-color: $bgcard;
             @include top-space;
+            margin-right: 135px;
         }
     }
 
