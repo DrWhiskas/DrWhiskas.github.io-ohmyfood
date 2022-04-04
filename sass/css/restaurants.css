@@ -21,7 +21,7 @@
 .restaurants__card {
   overflow: hidden;
   height: 280px;
-  width: 95%;
+  min-width: 200px;
   border-radius: 20px;
   background: white;
   position: relative;
