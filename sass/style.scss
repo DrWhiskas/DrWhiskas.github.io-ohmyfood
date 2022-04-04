@@ -5,9 +5,10 @@
 @import "./layout/footer.scss";
 @import "./layout/reservation.scss";
 @import "./layout/button.scss";
-@import "restaurants.scss";
+@import "./layout/restaurants.scss";
 @import "./layout/functioning.scss";
-@import "/sass/desktop.scss";
+@import "desktop.scss";
+@import "animations.scss";
 
 .title_font {
     font-family: 'Shrikhand', cursive;

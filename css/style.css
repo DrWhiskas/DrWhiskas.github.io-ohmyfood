@@ -90,20 +90,29 @@ a {
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  .restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .restaurants {
   background-color: #F2F2F2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 0 20px;
 }
 
 .restaurants__title {
@@ -113,7 +122,7 @@ a {
 .restaurants__card {
   overflow: hidden;
   height: 280px;
-  width: 95%;
+  min-width: 320px;
   border-radius: 20px;
   background: white;
   position: relative;
@@ -154,7 +163,8 @@ a {
           flex: 1;
 }
 
-.restaurants__card__info__text h3, .restaurants__card__info__text p {
+.restaurants__card__info__text h3,
+.restaurants__card__info__text p {
   margin: 0;
 }
 
@@ -186,6 +196,166 @@ a {
 
 .functioning__card i {
   padding: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: blue;
+  }
+  .restaurants {
+    background-color: #F2F2F2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .restaurants__card {
+    min-width: 34%;
+  }
+  .functioning {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .functioning__list {
+    position: relative;
+  }
+  .functioning__card {
+    padding: 20px;
+    border-radius: 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #F6F6F6;
+    margin-top: 20px;
+  }
+}
+
+.acceuil {
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.acceuil h1 {
+  font-size: 120px;
+  margin-bottom: 450px;
+}
+
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.letter {
+  color: rebeccapurple;
+  font-size: 80px;
+  letter-spacing: 60px;
+  -webkit-animation: flash 1.2s linear infinite;
+          animation: flash 1.2s linear infinite;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    color: magenta;
+    text-shadow: 0 0 7px darkmagenta;
+  }
+  90% {
+    color: black;
+    text-shadow: none;
+  }
+  100% {
+    color: magenta;
+    text-shadow: 0 0 7px darkmagenta;
+  }
+}
+
+@keyframes flash {
+  0% {
+    color: magenta;
+    text-shadow: 0 0 7px darkmagenta;
+  }
+  90% {
+    color: black;
+    text-shadow: none;
+  }
+  100% {
+    color: magenta;
+    text-shadow: 0 0 7px darkmagenta;
+  }
+}
+
+.letter:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.letter:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.letter:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.letter:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.letter:nth-child(5) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.letter:nth-child(6) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.letter:nth-child(7) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.letter:nth-child(8) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.out {
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-out;
+  transition: opacity 0.4s ease-out;
 }
 
 .title_font {

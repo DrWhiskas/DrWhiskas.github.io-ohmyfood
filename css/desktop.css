@@ -1,6 +1,19 @@
 @media screen and (min-width: 1024px) {
   body {
-    background-color: red;
+    background-color: blue;
+  }
+  .restaurants {
+    background-color: #F2F2F2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .restaurants__card {
+    min-width: 34%;
   }
 }
 /*# sourceMappingURL=desktop.css.map */
