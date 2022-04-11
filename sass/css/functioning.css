@@ -13,6 +13,11 @@
 }
 
 .functioning__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 20px;
   border-radius: 15px;
   -webkit-box-align: center;
@@ -26,6 +31,14 @@
   background-color: #9356DC;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+}
+
+.functioning__card__number {
+  background-color: crimson;
+  color: white;
+  border-radius: 55%;
+  padding: 6px 10px;
+  margin-left: -35px;
 }
 
 .functioning__card i {

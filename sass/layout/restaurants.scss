@@ -1,6 +1,6 @@
 @import "../utils/variables.scss";
 @import "../utils/mixins.scss";
-
+@import "../animations.scss";
 @media screen and (max-width: 768px){
     .restaurants {
         display: flex;

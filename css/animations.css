@@ -2,7 +2,8 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  background: black;
+  background: white;
+  opacity: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,6 +125,28 @@
   to {
     -webkit-transform: scaleX(0);
             transform: scaleX(0);
+  }
+}
+
+@-webkit-keyframes appear {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes appear {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 /*# sourceMappingURL=animations.css.map */

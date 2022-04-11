@@ -40,6 +40,7 @@
     margin-top: -73px;
     border-radius: 25px 25px 0 0;
     height: auto;
+    padding: 10px;
     &__header{
         display: flex;
         justify-content: space-between;
@@ -47,6 +48,12 @@
         padding: 0 20px;
     }
     &__card{
+        @for $i from 1 through 13 {
+            &:nth-child(#{$i}n) {
+                animation-fill-mode: both;
+                animation-delay: .1s * $i;
+            }
+        }
         display: flex;
         justify-content: space-between;
         margin-top: 20px;
@@ -54,6 +61,7 @@
         border-radius: 15px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         background-color: white;
+        animation: appear 2s;
         &__info p{
             margin: 0;
         }
@@ -66,6 +74,11 @@
             font-weight: bold;
         }
     }  
+}
+@media screen and (min-width: 1024px) {
+    .main__header img{
+        width: 100%;
+    }
 }
 
 /*** CTA ***/

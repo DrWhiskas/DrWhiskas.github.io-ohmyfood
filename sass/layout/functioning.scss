@@ -12,6 +12,8 @@
         position: relative;
     }
     &__card{
+        display: flex;
+        flex-wrap: wrap;
         padding: 20px;
         border-radius: 15px;
         align-items: center;
@@ -21,6 +23,13 @@
     &__card:hover{
         background-color: $primary;
         transition: all .5s ease;
+    }
+    &__card__number{
+        background-color: crimson;
+        color: white;
+        border-radius: 55%;
+        padding: 6px 10px;
+        margin-left: -35px;
     }
     &__card i{
         padding: 10px;
