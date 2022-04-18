@@ -3,7 +3,6 @@
   width: 100%;
   height: 100%;
   background: white;
-  opacity: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,24 +128,28 @@
 }
 
 @-webkit-keyframes appear {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+  from {
+    opacity: 0%;
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
   }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 100%;
   }
 }
 
 @keyframes appear {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+  from {
+    opacity: 0%;
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
   }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 100%;
   }
 }
 
@@ -189,8 +192,6 @@
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   margin-top: 20px;
-  -webkit-animation: appear 2s;
-          animation: appear 2s;
 }
 
 .restaurants__card img {
@@ -228,5 +229,10 @@
 .restaurants__card__info__text h3,
 .restaurants__card__info__text p {
   margin: 0;
+}
+
+/************** RESTP ****/
+.menu__card__check {
+  padding: 10px;
 }
 /*# sourceMappingURL=restaurants.css.map */

@@ -3,7 +3,6 @@
   width: 100%;
   height: 100%;
   background: white;
-  opacity: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,24 +128,28 @@
 }
 
 @-webkit-keyframes appear {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+  from {
+    opacity: 0%;
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
   }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 100%;
   }
 }
 
 @keyframes appear {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+  from {
+    opacity: 0%;
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
   }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 100%;
   }
 }
 /*# sourceMappingURL=animations.css.map */

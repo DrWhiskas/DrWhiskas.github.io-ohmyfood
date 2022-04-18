@@ -8,8 +8,11 @@
         justify-content: space-around;
         &__card{
             min-width: 34%;
+        &__hero{
+            left: 79%;
         }
     }
+}
     .functioning {
         display: flex;
         flex-wrap: wrap;

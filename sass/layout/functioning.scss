@@ -4,7 +4,7 @@
 .functioning{
     @include top-space;
     position: relative;
-    padding: 10px;
+    padding: 47px;
     & h2{
         width: 100%;
     }
@@ -19,17 +19,18 @@
         align-items: center;
         background-color: $bgcard;
         @include top-space;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     }
     &__card:hover{
-        background-color: $primary;
+        background-color: ($primary 0.5);
         transition: all .5s ease;
     }
     &__card__number{
-        background-color: crimson;
+        background-color: $primary;
         color: white;
         border-radius: 55%;
         padding: 6px 10px;
-        margin-left: -35px;
+        margin-left: -37px;
     }
     &__card i{
         padding: 10px;
