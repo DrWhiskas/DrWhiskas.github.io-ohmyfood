@@ -226,13 +226,7 @@
           flex: 1;
 }
 
-.restaurants__card__info__text h3,
-.restaurants__card__info__text p {
+.restaurants__card__info__text h3, .restaurants__card__info__text p {
   margin: 0;
-}
-
-/************** RESTP ****/
-.menu__card__check {
-  padding: 10px;
 }
 /*# sourceMappingURL=restaurants.css.map */

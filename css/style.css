@@ -318,8 +318,7 @@ a {
           flex: 1;
 }
 
-.restaurants__card__info__text h3,
-.restaurants__card__info__text p {
+.restaurants__card__info__text h3, .restaurants__card__info__text p {
   margin: 0;
 }
 
@@ -707,12 +706,20 @@ a {
           animation: spin 1s;
 }
 
+.menu__card:hover p {
+  width: 230px;
+}
+
 .menu__card__info {
   padding: 20px 10px;
 }
 
 .menu__card__info p {
   margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 300px;
 }
 
 .menu__card__info h3 {
@@ -809,12 +816,17 @@ a {
   display: flex;
 }
 
-.premier {
+.second {
   position: absolute;
 }
 
-.second {
+.fa-solid {
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 /*# sourceMappingURL=style.css.map */

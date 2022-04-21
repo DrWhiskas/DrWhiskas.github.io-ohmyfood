@@ -71,12 +71,19 @@
                 animation: spin 1s;
             }
         }
+        &:hover p{
+            width: 230px;
+        }
 
         &__info{
             padding: 20px 10px;
         }
         &__info p{
             margin: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow:ellipsis;
+            width: 300px;
         }
         &__info h3{
             margin: 0;
@@ -145,9 +152,14 @@
 {
     display: flex;
 }
-.premier{
+.second{
     position: absolute;
 }
-.second{
-        background: linear-gradient(to bottom right, $secondary, $primary);
+
+.fa-solid{
+    background: linear-gradient(to bottom right, $secondary, $primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 0.5s ease;
 }
