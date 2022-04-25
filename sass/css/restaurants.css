@@ -192,6 +192,13 @@
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   margin-top: 20px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.restaurants__card:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 .restaurants__card img {

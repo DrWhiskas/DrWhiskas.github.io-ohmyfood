@@ -284,6 +284,13 @@ a {
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   margin-top: 20px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.restaurants__card:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 .restaurants__card img {
@@ -549,6 +556,16 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 10px;
+}
+
+.header__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /***** MAIN *****/
@@ -589,11 +606,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   overflow: hidden;
-  height: 80px;
+  max-width: 100%;
   margin-top: 20px;
   border-radius: 15px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -697,8 +711,8 @@ a {
 
 .menu__card:hover .menu__card__check {
   margin-right: 0;
-  -webkit-transition: all 0.7s;
-  transition: all 0.7s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .menu__card:hover .menu__card__check i {
@@ -706,12 +720,19 @@ a {
           animation: spin 1s;
 }
 
+.menu__card:hover h3 {
+  width: 230px;
+}
+
 .menu__card:hover p {
   width: 230px;
 }
 
 .menu__card__info {
-  padding: 20px 10px;
+  padding: 17px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .menu__card__info p {
@@ -719,11 +740,15 @@ a {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 300px;
+  width: 275px;
 }
 
 .menu__card__info h3 {
   margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 275px;
 }
 
 .menu__card__price {
@@ -734,14 +759,13 @@ a {
       -ms-flex-align: end;
           align-items: flex-end;
   font-weight: bold;
-  padding: 10px 16px;
-  margin-right: -101px;
+  padding: 10px;
 }
 
 @-webkit-keyframes spin {
   0% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
@@ -751,8 +775,8 @@ a {
 
 @keyframes spin {
   0% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
@@ -761,10 +785,19 @@ a {
 }
 
 .menu__card__check {
-  width: 70px;
-  background-color: aqua;
-  margin-right: -71px;
+  background-color: #99E2D0;
+  margin-right: -60px;
   text-align: center;
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -818,6 +851,11 @@ a {
 
 .second {
   position: absolute;
+  opacity: 0;
+}
+
+.second:hover {
+  opacity: 1;
 }
 
 .fa-solid {
@@ -826,7 +864,7 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 /*# sourceMappingURL=style.css.map */

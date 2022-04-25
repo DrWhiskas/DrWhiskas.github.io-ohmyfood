@@ -23,6 +23,11 @@
 /**** HEADER *****/
 .header{
     display: flex;
+    padding: 10px;
+    &__icon{
+        display: flex;
+        align-items: center;
+    }
 }
 
 /***** MAIN *****/
@@ -55,9 +60,8 @@
             }
         }
         display: flex;
-        justify-content: space-between;
         overflow: hidden;
-        height: 80px;
+        max-width: 100%;
         margin-top: 20px;
         border-radius: 15px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -66,41 +70,49 @@
         cursor: pointer;
         &:hover .menu__card__check{
             margin-right: 0;
-            transition: all 0.7s;
+            transition: all 0.4s;
             & i{
                 animation: spin 1s;
             }
+
+        }
+        &:hover h3{
+            width: 230px;
         }
         &:hover p{
             width: 230px;
         }
 
         &__info{
-            padding: 20px 10px;
+            padding: 17px;
+            flex: 1;
         }
         &__info p{
             margin: 0;
             overflow: hidden;
             white-space: nowrap;
             text-overflow:ellipsis;
-            width: 300px;
+            width: 275px;
         }
         &__info h3{
             margin: 0;
+           overflow: hidden;
+           white-space: nowrap;
+           text-overflow:ellipsis;
+           width: 275px;
         }
         &__price{
             display: flex;
             align-items: flex-end;
             font-weight: bold;
-            padding: 10px 16px;
-            margin-right: -101px;
+            padding: 10px;
         }
     }  
 }
 
 @keyframes spin {
     0%{
-        transform: rotate(10deg) ;
+        transform: rotate(20deg) ;
     }
     100%{
         transform: rotate(360deg);
@@ -109,10 +121,13 @@
 }
 
 .menu__card__check{
-    width: 70px;
-    background-color: aqua;
-    margin-right: -71px;
+    background-color: $tertiary;
+    margin-right: -60px;
     text-align: center;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -151,9 +166,14 @@
 .restaurants__card__info__fav
 {
     display: flex;
+
 }
 .second{
     position: absolute;
+    opacity: 0;
+    &:hover{
+        opacity: 1;
+    }
 }
 
 .fa-solid{
@@ -161,5 +181,10 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    transition: 0.5s ease;
+    transition: 0.2s ease;
+}
+
+.menu__card:hover
+{
+
 }
