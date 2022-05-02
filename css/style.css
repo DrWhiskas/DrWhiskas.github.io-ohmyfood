@@ -262,6 +262,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -313,6 +315,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -711,13 +716,13 @@ a {
 
 .menu__card:hover .menu__card__check {
   margin-right: 0;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .menu__card:hover .menu__card__check i {
-  -webkit-animation: spin 1s;
-          animation: spin 1s;
+  -webkit-animation: spin .5s;
+          animation: spin .5s;
 }
 
 .menu__card:hover h3 {
@@ -764,8 +769,8 @@ a {
 
 @-webkit-keyframes spin {
   0% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
@@ -775,8 +780,8 @@ a {
 
 @keyframes spin {
   0% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
@@ -866,5 +871,9 @@ a {
   color: transparent;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
+}
+
+.white {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
