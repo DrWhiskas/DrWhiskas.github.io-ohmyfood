@@ -21,12 +21,13 @@
           animation-fill-mode: forwards;
 }
 
-.letter {
+.loader__letter {
   color: rebeccapurple;
   font-size: 80px;
-  letter-spacing: 60px;
+  letter-spacing: 20px;
   -webkit-animation: flash 1.2s linear infinite;
           animation: flash 1.2s linear infinite;
+  width: 10%;
 }
 
 @-webkit-keyframes flash {
@@ -59,42 +60,42 @@
   }
 }
 
-.letter:nth-child(1) {
+.loader__letter:nth-child(1) {
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
 }
 
-.letter:nth-child(2) {
+.loader__letter:nth-child(2) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 
-.letter:nth-child(3) {
+.loader__letter:nth-child(3) {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
 
-.letter:nth-child(4) {
+.loader__letter:nth-child(4) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
 
-.letter:nth-child(5) {
+.loader__letter:nth-child(5) {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
-.letter:nth-child(6) {
+.loader__letter:nth-child(6) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
 
-.letter:nth-child(7) {
+.loader__letter:nth-child(7) {
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
 }
 
-.letter:nth-child(8) {
+.loader__letter:nth-child(8) {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
@@ -150,6 +151,16 @@
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
     opacity: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .loader {
+    height: 10%;
+    width: 10%;
+  }
+  .loader__letter {
+    color: blue;
   }
 }
 /*# sourceMappingURL=animations.css.map */

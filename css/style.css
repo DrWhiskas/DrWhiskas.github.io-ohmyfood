@@ -88,6 +88,13 @@ a {
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   cursor: pointer;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.btn__style:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 .loader {
@@ -113,12 +120,13 @@ a {
           animation-fill-mode: forwards;
 }
 
-.letter {
+.loader__letter {
   color: rebeccapurple;
   font-size: 80px;
-  letter-spacing: 60px;
+  letter-spacing: 20px;
   -webkit-animation: flash 1.2s linear infinite;
           animation: flash 1.2s linear infinite;
+  width: 10%;
 }
 
 @-webkit-keyframes flash {
@@ -151,42 +159,42 @@ a {
   }
 }
 
-.letter:nth-child(1) {
+.loader__letter:nth-child(1) {
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
 }
 
-.letter:nth-child(2) {
+.loader__letter:nth-child(2) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 
-.letter:nth-child(3) {
+.loader__letter:nth-child(3) {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
 
-.letter:nth-child(4) {
+.loader__letter:nth-child(4) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
 
-.letter:nth-child(5) {
+.loader__letter:nth-child(5) {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
-.letter:nth-child(6) {
+.loader__letter:nth-child(6) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
 
-.letter:nth-child(7) {
+.loader__letter:nth-child(7) {
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
 }
 
-.letter:nth-child(8) {
+.loader__letter:nth-child(8) {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
@@ -242,6 +250,16 @@ a {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
     opacity: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .loader {
+    height: 10%;
+    width: 10%;
+  }
+  .loader__letter {
+    color: blue;
   }
 }
 
@@ -453,12 +471,13 @@ a {
           animation-fill-mode: forwards;
 }
 
-.letter {
+.loader__letter {
   color: rebeccapurple;
   font-size: 80px;
-  letter-spacing: 60px;
+  letter-spacing: 20px;
   -webkit-animation: flash 1.2s linear infinite;
           animation: flash 1.2s linear infinite;
+  width: 10%;
 }
 
 @keyframes flash {
@@ -476,42 +495,42 @@ a {
   }
 }
 
-.letter:nth-child(1) {
+.loader__letter:nth-child(1) {
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
 }
 
-.letter:nth-child(2) {
+.loader__letter:nth-child(2) {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 
-.letter:nth-child(3) {
+.loader__letter:nth-child(3) {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
 
-.letter:nth-child(4) {
+.loader__letter:nth-child(4) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
 
-.letter:nth-child(5) {
+.loader__letter:nth-child(5) {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
-.letter:nth-child(6) {
+.loader__letter:nth-child(6) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
 
-.letter:nth-child(7) {
+.loader__letter:nth-child(7) {
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
 }
 
-.letter:nth-child(8) {
+.loader__letter:nth-child(8) {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
@@ -543,6 +562,16 @@ a {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
     opacity: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .loader {
+    height: 10%;
+    width: 10%;
+  }
+  .loader__letter {
+    color: blue;
   }
 }
 
@@ -718,6 +747,7 @@ a {
   margin-right: 0;
   -webkit-transition: all .5s;
   transition: all .5s;
+  width: 70px;
 }
 
 .menu__card:hover .menu__card__check i {
@@ -730,7 +760,7 @@ a {
 }
 
 .menu__card:hover p {
-  width: 230px;
+  width: 215px;
 }
 
 .menu__card__info {
@@ -740,12 +770,18 @@ a {
           flex: 1;
 }
 
+.menu__card__info:hover {
+  width: 140px;
+}
+
 .menu__card__info p {
   margin: 0;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 275px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .menu__card__info h3 {
@@ -754,6 +790,8 @@ a {
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 275px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .menu__card__price {

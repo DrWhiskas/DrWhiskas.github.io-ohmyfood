@@ -71,6 +71,7 @@
         &:hover .menu__card__check{
             margin-right: 0;
             transition: all .5s;
+            width: 70px;
             & i{
                 animation: spin .5s;
             }
@@ -80,12 +81,15 @@
             width: 230px;
         }
         &:hover p{
-            width: 230px;
+            width: 215px;
         }
 
         &__info{
             padding: 17px;
             flex: 1;
+            &:hover{
+                width: 140px;
+            }
         }
         &__info p{
             margin: 0;
@@ -93,6 +97,7 @@
             white-space: nowrap;
             text-overflow:ellipsis;
             width: 275px;
+            transition: all .5s ease-in-out;
         }
         &__info h3{
             margin: 0;
@@ -100,6 +105,7 @@
            white-space: nowrap;
            text-overflow:ellipsis;
            width: 275px;
+            transition: all .5s ease-in-out;
         }
         &__price{
             display: flex;
@@ -184,11 +190,7 @@
     transition: 0.2s ease;
 }
 
-.menu__card:hover
-{
-
-}
-
 .white{
     color: white;
 }
+
