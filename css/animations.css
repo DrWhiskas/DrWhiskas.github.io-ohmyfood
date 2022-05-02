@@ -153,14 +153,4 @@
     opacity: 100%;
   }
 }
-
-@media screen and (min-width: 1024px) {
-  .loader {
-    height: 10%;
-    width: 10%;
-  }
-  .loader__letter {
-    color: blue;
-  }
-}
 /*# sourceMappingURL=animations.css.map */

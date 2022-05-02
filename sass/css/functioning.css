@@ -30,7 +30,7 @@
 }
 
 .functioning__card:hover {
-  background-color: #9356DC 0.5;
+  background-color: #9356DC;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }

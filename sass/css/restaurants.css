@@ -24,9 +24,10 @@
 .loader__letter {
   color: rebeccapurple;
   font-size: 80px;
-  letter-spacing: 50px;
+  letter-spacing: 20px;
   -webkit-animation: flash 1.2s linear infinite;
           animation: flash 1.2s linear infinite;
+  width: 10%;
 }
 
 @-webkit-keyframes flash {
@@ -150,6 +151,16 @@
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
     opacity: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .loader {
+    height: 10%;
+    width: 10%;
+  }
+  .loader__letter {
+    color: blue;
   }
 }
 

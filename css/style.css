@@ -253,16 +253,6 @@ a {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .loader {
-    height: 10%;
-    width: 10%;
-  }
-  .loader__letter {
-    color: blue;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .restaurants {
     display: -webkit-box;
@@ -384,7 +374,7 @@ a {
 }
 
 .functioning__card:hover {
-  background-color: #9356DC 0.5;
+  background-color: #9356DC;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
@@ -562,16 +552,6 @@ a {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
     opacity: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .loader {
-    height: 10%;
-    width: 10%;
-  }
-  .loader__letter {
-    color: blue;
   }
 }
 
