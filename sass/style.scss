@@ -52,6 +52,9 @@
         align-items: center;
         padding: 0 20px;
     }
+    &__like{
+        display: flex;
+    }
     &__card{
         @for $i from 1 through 13 {
             &:nth-child(#{$i}n) {

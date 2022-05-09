@@ -30,9 +30,13 @@
 }
 
 .functioning__card:hover {
-  background-color: #9356DC;
+  background-color: #ead6f5;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+}
+
+.functioning__card:hover i {
+  color: #9356DC;
 }
 
 .functioning__card__number {
