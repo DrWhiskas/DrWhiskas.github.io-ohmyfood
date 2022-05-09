@@ -120,13 +120,16 @@ a {
           animation-fill-mode: forwards;
 }
 
-.loader__letter {
-  color: rebeccapurple;
-  font-size: 80px;
-  letter-spacing: 20px;
-  -webkit-animation: flash 1.2s linear infinite;
-          animation: flash 1.2s linear infinite;
-  width: 10%;
+.loader::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border: 10px solid #dddddd;
+  border-top-color: violet;
+  border-bottom-color: violet;
+  border-radius: 50%;
+  -webkit-animation: loading 1s linear infinite;
+          animation: loading 1s linear infinite;
 }
 
 @-webkit-keyframes flash {
@@ -250,6 +253,20 @@ a {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
     opacity: 100%;
+  }
+}
+
+@-webkit-keyframes loading {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes loading {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
   }
 }
 
@@ -465,13 +482,16 @@ a {
           animation-fill-mode: forwards;
 }
 
-.loader__letter {
-  color: rebeccapurple;
-  font-size: 80px;
-  letter-spacing: 20px;
-  -webkit-animation: flash 1.2s linear infinite;
-          animation: flash 1.2s linear infinite;
-  width: 10%;
+.loader::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border: 10px solid #dddddd;
+  border-top-color: violet;
+  border-bottom-color: violet;
+  border-radius: 50%;
+  -webkit-animation: loading 1s linear infinite;
+          animation: loading 1s linear infinite;
 }
 
 @keyframes flash {
@@ -556,6 +576,13 @@ a {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
     opacity: 100%;
+  }
+}
+
+@keyframes loading {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
   }
 }
 
@@ -862,6 +889,18 @@ a {
   .menu__card {
     width: 29%;
     margin-left: 1%;
+  }
+  .menu__card__info h3 {
+    width: 300px;
+  }
+  .menu__card__info p {
+    width: 300px;
+  }
+  .menu__card:hover h3 {
+    width: 300px;
+  }
+  .menu__card:hover p {
+    width: 300px;
   }
 }
 

@@ -162,6 +162,18 @@
     &__card{
         width: 29%;
         margin-left: 1%;
+        &__info h3{
+            width: 300px;
+        }
+        &__info p{
+            width: 300px;
+        }
+    &:hover h3{
+        width: 300px;
+    }
+    &:hover p{
+        width: 300px;
+    }     
     }
     }
 }
