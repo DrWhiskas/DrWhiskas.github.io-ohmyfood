@@ -215,4 +215,10 @@
 .restaurants__card__info__text h3, .restaurants__card__info__text p {
   margin: 0;
 }
+
+.restaurants__card__info__fav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=restaurants.css.map */

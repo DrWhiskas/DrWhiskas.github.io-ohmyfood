@@ -11,36 +11,3 @@
 @import "animations.scss";
 @import "./page/menu.scss";
 
-
-
-
-
-/***** MAIN *****/
-
-
-/*** CTA ***/
-.cta{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-.restaurants__card__info__fav
-{
-    display: flex;
-}
-.second{
-    position: absolute;
-    opacity: 0;
-    &:hover{
-        opacity: 1;
-    }
-}
-
-.icon-gradiant{ 
-    background: linear-gradient(to bottom right, $secondary, $primary);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    transition: 0.2s ease;
-}
-

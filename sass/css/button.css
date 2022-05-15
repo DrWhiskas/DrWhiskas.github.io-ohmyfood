@@ -1,3 +1,13 @@
+.reservation__cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
 .btn__style {
   padding: 15px 32px;
   border-radius: 30px;
@@ -13,9 +23,9 @@
 }
 
 .btn__style:hover {
-  -webkit-transform: scale(1.04);
-          transform: scale(1.04);
-  background-color: white;
-  color: red;
+  background-color: #C380E5;
+  background-blend-mode: lighten;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
 }
 /*# sourceMappingURL=button.css.map */

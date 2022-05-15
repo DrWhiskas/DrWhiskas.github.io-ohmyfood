@@ -1,4 +1,10 @@
 @import "../utils/variables.scss";
+.reservation__cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 .btn__style{
     padding: 15px 32px;
     border-radius: 30px;
@@ -9,8 +15,9 @@
     cursor:pointer;
     transition: all .5s ease-in-out;
     &:hover{
-        transform: scale(1.04);
-        background-color: white;
-        color: red;
+        background-color: #C380E5;
+        background-blend-mode: lighten;
+        box-shadow: rgba(0, 0, 0, 0.60) 0px 5px 15px; 
+
     }
 }

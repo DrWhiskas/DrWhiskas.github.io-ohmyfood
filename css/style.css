@@ -20,6 +20,25 @@ a {
   letter-spacing: 2px;
 }
 
+.second {
+  position: absolute;
+  opacity: 0;
+}
+
+.second:hover {
+  opacity: 1;
+}
+
+.icon-gradiant {
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
 .header {
   position: relative;
   display: -webkit-box;
@@ -62,6 +81,10 @@ a {
 .content__list {
   list-style: none;
   padding: 0;
+}
+
+.content h3 {
+  margin: 1px;
 }
 
 .reservation {
@@ -108,6 +131,16 @@ a {
   width: 90%;
 }
 
+.reservation__cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
 .btn__style {
   padding: 15px 32px;
   border-radius: 30px;
@@ -123,10 +156,10 @@ a {
 }
 
 .btn__style:hover {
-  -webkit-transform: scale(1.04);
-          transform: scale(1.04);
-  background-color: white;
-  color: red;
+  background-color: #C380E5;
+  background-blend-mode: lighten;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
 }
 
 .loader {
@@ -345,6 +378,12 @@ a {
 
 .restaurants__card__info__text h3, .restaurants__card__info__text p {
   margin: 0;
+}
+
+.restaurants__card__info__fav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .functioning {
@@ -813,42 +852,5 @@ a {
 .menu__title__line {
   width: 40px;
   border: 2px solid #99E2D0;
-}
-
-/***** MAIN *****/
-/*** CTA ***/
-.cta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 10px;
-}
-
-.restaurants__card__info__fav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.second {
-  position: absolute;
-  opacity: 0;
-}
-
-.second:hover {
-  opacity: 1;
-}
-
-.icon-gradiant {
-  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
 }
 /*# sourceMappingURL=style.css.map */

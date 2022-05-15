@@ -20,3 +20,19 @@ a{
   letter-spacing: 2px;
 
 }
+.second {
+  position: absolute;
+  opacity: 0;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.icon-gradiant {
+  background: linear-gradient(to bottom right, $secondary, $primary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 0.2s ease;
+}
