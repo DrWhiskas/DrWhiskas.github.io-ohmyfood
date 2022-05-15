@@ -7,13 +7,18 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 20px;
   background-color: #F6F6F6;
   padding-bottom: 23px;
   position: relative;
 }
 
 .reservation__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #EAEAEA;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -21,6 +26,10 @@
   width: 100%;
   text-align: center;
   font-weight: bold;
+}
+
+.reservation__header p {
+  margin-left: 15px;
 }
 
 .reservation__title {

@@ -15,5 +15,7 @@
 .btn__style:hover {
   -webkit-transform: scale(1.04);
           transform: scale(1.04);
+  background-color: white;
+  color: red;
 }
 /*# sourceMappingURL=button.css.map */

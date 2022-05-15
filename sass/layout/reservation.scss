@@ -5,16 +5,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    @include top-space;
     background-color: $bgcard;
     padding-bottom: 23px;
     position: relative;
     &__header{
+        display: flex;
+        justify-content: center;
         background-color: #EAEAEA;
         align-items: center;
         width: 100%;
         text-align: center;
         font-weight: bold;
+        & p{
+            margin-left: 15px;
+        }
     }
     &__title{
         text-align: center;
