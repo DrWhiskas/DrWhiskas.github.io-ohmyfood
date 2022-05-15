@@ -367,7 +367,7 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 16px;
+  padding: 2px;
   border-radius: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -393,7 +393,7 @@ a {
   color: white;
   border-radius: 55%;
   padding: 6px 10px;
-  margin-left: -37px;
+  margin-left: -20px;
 }
 
 .functioning__card i {
@@ -734,6 +734,24 @@ a {
           animation: spin .5s;
 }
 
+.menu__card__check {
+  background-color: #99E2D0;
+  margin-right: -60px;
+  text-align: center;
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
 .menu__card:hover h3 {
   width: 230px;
 }
@@ -784,22 +802,17 @@ a {
   padding: 10px;
 }
 
-.menu__card__check {
-  background-color: #99E2D0;
-  margin-right: -60px;
-  text-align: center;
-  width: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+.menu__title {
+  margin-top: 20px;
+}
+
+.menu__title h3 {
+  margin: 1px;
+}
+
+.menu__title__line {
+  width: 40px;
+  border: 2px solid #99E2D0;
 }
 
 /***** MAIN *****/

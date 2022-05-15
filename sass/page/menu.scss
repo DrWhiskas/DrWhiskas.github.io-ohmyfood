@@ -55,7 +55,16 @@
             & i {
                 animation: spin .5s;
             }
-
+        }
+        &__check{
+            background-color: $tertiary;
+            margin-right: -60px;
+            text-align: center;
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .5s;
         }
 
         &:hover h3 {
@@ -100,15 +109,15 @@
             padding: 10px;
         }
     }
+    &__title{
+        @include top-space;
+    }
+    &__title h3{
+        margin: 1px;
+    }
+    &__title__line{
+        width: 40px;
+        border: 2px solid $tertiary;        
+    }
 }
 
-.menu__card__check {
-    background-color: $tertiary;
-    margin-right: -60px;
-    text-align: center;
-    width: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all .5s;
-}

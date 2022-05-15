@@ -18,7 +18,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 16px;
+  padding: 2px;
   border-radius: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -44,7 +44,7 @@
   color: white;
   border-radius: 55%;
   padding: 6px 10px;
-  margin-left: -37px;
+  margin-left: -20px;
 }
 
 .functioning__card i {
