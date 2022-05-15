@@ -5,7 +5,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 .btn__style {
@@ -23,7 +23,7 @@
 }
 
 .btn__style:hover {
-  background-color: #C380E5;
+  background-color: #db98fdb2;
   background-blend-mode: lighten;
   -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;

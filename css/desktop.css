@@ -1,4 +1,4 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .restaurants {
     background-color: #F2F2F2;
     display: -webkit-box;
@@ -13,7 +13,7 @@
     min-width: 34%;
   }
   .restaurants__card__hero {
-    left: 79%;
+    left: 70%;
   }
   .functioning {
     display: -webkit-box;
@@ -54,6 +54,9 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0 20px;
   }
   .menu__header {
     width: 100%;
@@ -69,7 +72,7 @@
     width: 100%;
   }
   .menu__card {
-    width: 29%;
+    min-width: 390px;
     margin-left: 1%;
   }
   .menu__card__info h3 {
@@ -82,7 +85,7 @@
     width: 300px;
   }
   .menu__card:hover p {
-    width: 300px;
+    width: 260px;
   }
 }
 /*# sourceMappingURL=desktop.css.map */

@@ -138,7 +138,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 .btn__style {
@@ -156,7 +156,7 @@ a {
 }
 
 .btn__style:hover {
-  background-color: #C380E5;
+  background-color: #db98fdb2;
   background-blend-mode: lighten;
   -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
@@ -351,7 +351,7 @@ a {
 .restaurants__card__hero {
   position: absolute;
   top: 8%;
-  left: 70%;
+  left: 65%;
   padding: 9px 17px;
   border-radius: 6px;
   background: #99E2D0;
@@ -440,7 +440,7 @@ a {
   color: #7E7E7E;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .restaurants {
     background-color: #F2F2F2;
     display: -webkit-box;
@@ -455,7 +455,7 @@ a {
     min-width: 34%;
   }
   .restaurants__card__hero {
-    left: 79%;
+    left: 70%;
   }
   .functioning {
     display: -webkit-box;
@@ -496,6 +496,9 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0 20px;
   }
   .menu__header {
     width: 100%;
@@ -511,7 +514,7 @@ a {
     width: 100%;
   }
   .menu__card {
-    width: 29%;
+    min-width: 390px;
     margin-left: 1%;
   }
   .menu__card__info h3 {
@@ -524,7 +527,7 @@ a {
     width: 300px;
   }
   .menu__card:hover p {
-    width: 300px;
+    width: 260px;
   }
 }
 

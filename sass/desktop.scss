@@ -1,7 +1,7 @@
 @import "utils/variables.scss";
 @import "utils/mixins.scss";
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
     .restaurants {
         background-color: #F2F2F2;
         display: flex;
@@ -12,7 +12,7 @@
             min-width: 34%;
     
             &__hero {
-                left: 79%;
+                left: 70%;
             }
         }
     }
@@ -46,6 +46,8 @@
         margin-top: 0px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0 20px;
     
         &__header {
             width: 100%;
@@ -62,9 +64,8 @@
         }
     
         &__card {
-            width: 29%;
-            margin-left: 1%;
-    
+            min-width: 390px;
+            margin-left: 1%;    
             &__info h3 {
                 width: 300px;
             }
@@ -78,7 +79,7 @@
             }
     
             &:hover p {
-                width: 300px;
+                width: 260px;
             }
         }
     }
