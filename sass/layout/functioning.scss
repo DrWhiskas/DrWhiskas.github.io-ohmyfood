@@ -14,7 +14,7 @@
     &__card{
         display: flex;
         flex-wrap: wrap;
-        padding: 20px;
+        padding: 16px;
         border-radius: 15px;
         align-items: center;
         background-color: $bgcard;
@@ -38,5 +38,6 @@
     }
     &__card i{
         padding: 10px;
+        color: #7E7E7E;
     }
 }

@@ -9,15 +9,8 @@
 @import "./layout/functioning.scss";
 @import "desktop.scss";
 @import "animations.scss";
+@import "./page/menu.scss";
 
-.title_font {
-    font-family: 'Shrikhand', cursive;
-    font-style: italic;
-    color: black;
-    &--white{
-        color: white;
-    }    
-}
 
 
 /**** HEADER *****/
@@ -31,154 +24,7 @@
 }
 
 /***** MAIN *****/
-.main__header{
-    margin-top: 20px;
-    & img{
-        max-width: 100%;
-        min-height: 250px;
-        object-fit: cover;
-    }
-}
-.menu{
-    position: relative;
-    background-color:$bgcard;
-    margin-top: -73px;
-    border-radius: 25px 25px 0 0;
-    height: auto;
-    padding: 10px;
-    &__header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 20px;
-    }
-    &__like{
-        display: flex;
-    }
-    &__card{
-        @for $i from 1 through 13 {
-            &:nth-child(#{$i}n) {
-                animation-fill-mode: both;
-                animation-delay: .1s * $i;
-            }
-        }
-        display: flex;
-        overflow: hidden;
-        max-width: 100%;
-        margin-top: 20px;
-        border-radius: 15px;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        background-color: white;
-        animation: appear .9s;
-        cursor: pointer;
-       
-        &:hover .menu__card__check{
-            margin-right: 0;
-            transition: all .5s;
-            width: 70px;
-            & i{
-                animation: spin .5s;
-            }
 
-        }
-        &:hover h3{
-            width: 230px;
-        }
-        &:hover p{
-            width: 215px;
-        }
-
-        &__info{
-            padding: 17px;
-            flex: 1;
-            &:hover{
-                width: 140px;
-            }
-        }
-        &__info p{
-            margin: 0;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow:ellipsis;
-            width: 275px;
-            transition: all .5s ease-in-out;
-        }
-        &__info h3{
-            margin: 0;
-           overflow: hidden;
-           white-space: nowrap;
-           text-overflow:ellipsis;
-           width: 275px;
-            transition: all .5s ease-in-out;
-        }
-        &__price{
-            display: flex;
-            align-items: flex-end;
-            font-weight: bold;
-            padding: 10px;
-        }
-    }  
-}
-
-@keyframes spin {
-    0%{
-        transform: rotate(40deg) ;
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-
-}
-
-.menu__card__check{
-    background-color: $tertiary;
-    margin-right: -60px;
-    text-align: center;
-    width: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all .5s;
-}
-
-@media screen and (min-width: 1024px) {
-    .main__header img{
-        width: 100%;
-        height: 500px;    
-    }
-    .menu{
-        margin-top: 0px;
-        display: flex;
-        flex-wrap: wrap;
-    &__header{
-        width: 100%;
-        justify-content: center;
-        padding: 10px 10px;
-        & h2{
-            margin-right: 3%;
-        }
-    }    
-    &__title{
-        width: 100%;
-    }
-    &__card{
-        width: 29%;
-        margin-left: 1%;
-        &__info h3{
-            width: 300px;
-        }
-        &__info p{
-            width: 300px;
-        }
-    &:hover h3{
-        width: 300px;
-    }
-    &:hover p{
-        width: 300px;
-    }     
-    }
-    }
-}
 
 /*** CTA ***/
 .cta{
@@ -199,15 +45,11 @@
     }
 }
 
-.fa-solid{
+.icon-gradiant{ 
     background: linear-gradient(to bottom right, $secondary, $primary);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     transition: 0.2s ease;
-}
-
-.white{
-    color: white;
 }
 
