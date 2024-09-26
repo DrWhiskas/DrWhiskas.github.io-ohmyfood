@@ -1,0 +1,27 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+.reservation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include top-space;
+    background-color: $bgcard;
+    padding-bottom: 23px;
+    position: relative;
+    &__header{
+        background-color: #EAEAEA;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+    }
+    &__title{
+        text-align: center;
+        width: 71%;
+    }
+    &__text{
+        text-align: center;
+        width: 90%;
+    }
+}

@@ -1,0 +1,10 @@
+@import "../utils/variables.scss";
+.btn__style{
+    padding: 15px 32px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background: linear-gradient(to bottom right,$secondary,$primary);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor:pointer;
+}

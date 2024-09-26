@@ -1,0 +1,25 @@
+@import "../utils/variables.scss";
+@import "../utils/mixins.scss";
+
+.functioning{
+    @include top-space;
+    position: relative;
+    padding: 10px;
+    &__list{
+        position: relative;
+    }
+    &__card{
+        padding: 20px;
+        border-radius: 15px;
+        align-items: center;
+        background-color: $bgcard;
+        @include top-space;
+    }
+    &__card:hover{
+        background-color: $primary;
+        transition: all .5s ease;
+    }
+    &__card i{
+        padding: 10px;
+    }
+}

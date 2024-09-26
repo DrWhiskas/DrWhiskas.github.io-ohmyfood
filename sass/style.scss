@@ -1,0 +1,77 @@
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+@import "./base/base.scss";
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+@import "./layout/reservation.scss";
+@import "./layout/button.scss";
+@import "./layout/restaurants.scss";
+@import "./layout/functioning.scss";
+
+.title_font {
+    font-family: 'Shrikhand', cursive;
+    font-style: italic;
+    color: red;
+    &--white{
+        color: white;
+    }    
+}
+
+
+/**** HEADER *****/
+.header{
+    display: flex;   
+}
+
+/***** MAIN *****/
+.main__header{
+    margin-top: 20px;
+    & img{
+        max-width: 100%;
+        max-height: 250px;
+        object-fit: cover;
+    }
+}
+.menu{
+    position: relative;
+    background-color:$bgcard;
+    margin-top: -73px;
+    border-radius: 25px 25px 0 0;
+    height: auto;
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    &__title{
+        background-color: red;
+    }
+    &__card{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        background-color: white;
+        &__info p{
+            margin: 0;
+        }
+        &__info h3{
+            margin: 0;
+        }
+        &__price{
+            display: flex;
+            align-items: flex-end;
+            font-weight: bold;
+        }
+    }  
+}
+
+/*** CTA ***/
+.cta{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}

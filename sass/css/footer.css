@@ -1,0 +1,21 @@
+.content {
+  background-color: #353535;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content__list {
+  list-style: none;
+  padding: 0;
+}
+/*# sourceMappingURL=footer.css.map */
